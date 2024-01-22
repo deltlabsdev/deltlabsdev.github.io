@@ -1,0 +1,33 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "deltlabsdev",
+      "_appTitle": "DeLT Labs Dev",
+      "_appLogoUrl": "https://deltlabs.com",      
+      "_appFooter":"<a href=\"https://deltlabs.com\">DeLT Labs GmbH</a>",      
+      "pdf": false
+    }
+  }
+}
