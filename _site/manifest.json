@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/runner/work/deltlabsdev-pages/deltlabsdev-pages",
+  "source_base_path": "C:/Data/DeLTLabs/Dev/DocFx/deltlabsdev-pages/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -26,11 +26,21 @@
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "docs/toc.json"
-        },
         ".html": {
           "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.jpg"
         }
       },
       "version": ""
@@ -49,11 +59,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

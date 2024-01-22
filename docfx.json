@@ -26,6 +26,7 @@
       "_appName": "deltlabsdev",
       "_appTitle": "DeLT Labs Dev",
       "_appLogoUrl": "https://deltlabs.com",      
+      "_appLogoPath": "images/logo.jpg",
       "_appFooter":"<a href=\"https://deltlabs.com\">DeLT Labs GmbH</a>",      
       "_disableContribution": true,
       "pdf": false
