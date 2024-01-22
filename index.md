@@ -2,6 +2,6 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# Home
 
 Welcome!
