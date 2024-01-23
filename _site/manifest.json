@@ -112,11 +112,11 @@
       "type": "Toc",
       "source_relative_path": "xAPI/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "xAPI/toc.html"
-        },
         ".json": {
           "relative_path": "xAPI/toc.json"
+        },
+        ".html": {
+          "relative_path": "xAPI/toc.html"
         }
       },
       "version": ""
