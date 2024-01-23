@@ -23,11 +23,12 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "deltlabsdev",
-      "_appTitle": "DeLT Labs Dev",
-      "_appLogoUrl": "https://deltlabs.com",      
-      "_appLogoPath": "images/logo.jpg",
-      "_appFooter":"<a href=\"https://deltlabs.com\">DeLT Labs GmbH</a>",      
+      "_appName": " DeLT Labs Dev",
+      "_appTitle": " DeLT Labs Dev",
+      "_appLogoUrl": "https://dev.deltlabs.com",      
+      "_appLogoPath": "images/custom.svg",
+      "_appFaviconPath": "images/custom.ico",
+      "_appFooter":"<a href=\"https://deltlabs.com\">DeLT Labs GmbH</a> <a href=\"/imprint.html\">Impressum</a>",      
       "_disableContribution": true,
       "pdf": false
     }

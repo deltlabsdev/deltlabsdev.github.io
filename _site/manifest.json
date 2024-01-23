@@ -37,10 +37,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/custom.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/custom.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/custom.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/custom.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/logo.jpg",
       "output": {
         "resource": {
           "relative_path": "images/logo.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "imprint.md",
+      "output": {
+        ".html": {
+          "relative_path": "imprint.html"
         }
       },
       "version": ""
@@ -64,6 +94,29 @@
         },
         ".json": {
           "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "xAPI/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/toc.html"
+        },
+        ".json": {
+          "relative_path": "xAPI/toc.json"
         }
       },
       "version": ""
