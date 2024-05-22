@@ -1,4 +1,4 @@
 - name: Home
   href: index.md
 - name: xAPI
-  href: xAPI/index.md
+  href: xapi/toc.yml

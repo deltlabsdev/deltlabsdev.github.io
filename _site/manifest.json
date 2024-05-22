@@ -1,7 +1,15 @@
 {
-  "source_base_path": "/home/runner/work/deltlabsdev.github.io/deltlabsdev.github.io",
+  "source_base_path": "C:/Data/DeLTLabs/Dev/DocFx/deltlabsdev-pages/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
@@ -26,11 +34,11 @@
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "docs/toc.json"
-        },
         ".html": {
           "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
         }
       },
       "version": ""
@@ -66,6 +74,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/lrscreds.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/lrscreds.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "imprint.md",
       "output": {
@@ -89,11 +107,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
@@ -104,6 +122,79 @@
       "output": {
         ".html": {
           "relative_path": "xAPI/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/apicalls.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/apicalls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/images/apicalls.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/images/apicalls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/index copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/index copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/react.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/react.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "xAPI/sqllrs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/toc.html"
+        },
+        ".json": {
+          "relative_path": "xAPI/sqllrs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/windows.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/windows.html"
         }
       },
       "version": ""

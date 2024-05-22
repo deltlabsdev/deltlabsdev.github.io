@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Home |  DeLT Labs Dev </title>
+      <title>SQL LRS |  DeLT Labs Dev </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Home |  DeLT Labs Dev ">
+      <meta name="title" content="SQL LRS |  DeLT Labs Dev ">
       
       
-      <link rel="icon" href="images/custom.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../images/custom.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
       
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/deltlabsdev/deltlabsdev-pages/blob/main/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/deltlabsdev/deltlabsdev-pages/blob/main/xAPI/sqllrs/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -31,7 +31,7 @@
       <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
-  <script type="module" src="./public/docfx.min.js"></script>
+  <script type="module" src="./../../public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="https://dev.deltlabs.com">
-            <img id="logo" class="svg" src="images/custom.svg" alt=" DeLT Labs Dev">
+            <img id="logo" class="svg" src="../../images/custom.svg" alt=" DeLT Labs Dev">
              DeLT Labs Dev
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,9 +85,58 @@
         </div>
 
         <article data-uid="">
-<h1 id="home">Home</h1>
+<h1 id="sql-lrs">SQL LRS</h1>
 
-<p>Welcome!</p>
+<p>SQL LRS is an Apache 2.0 open source xAPI Learning Record Store from Yet Analytics.</p>
+<h2 id="windows-installation">Windows Installation</h2>
+<ol>
+<li>Download files from <a href="https://github.com/yetanalytics/lrsql/releases">https://github.com/yetanalytics/lrsql/releases</a>.</li>
+<li>Unzip files to folder on your computer.</li>
+<li>Open config folder and copy lrsql.json.example to lrsql.json. Set user name and password.</li>
+<li>Run lrsql.exe. If you get the &quot;Windows protected your PC&quot; message, click on &quot;More info&quot; and &quot;Run anyway&quot;.</li>
+<li>Open http://localhost:8080/admin.</li>
+</ol>
+<h2 id="https-on-windows">HTTPS on Windows</h2>
+<p>For testing, the default HTTP connection works fine. For some use cases a HTTPS connection to the Learning Record Store is required. You can self-issue a certificate for SQLLRS:</p>
+<ol>
+<li>Open PowerShell as Administrator.</li>
+<li>Run
+<pre><code class="lang-json">New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName “localhost” -FriendlyName “MyLocalSiteCert” -NotAfter (Get-Date).AddYears(10)
+</code></pre>
+You can choose any string as friendly name.</li>
+<li>Login as Administrator.</li>
+<li>Run “Manage computer certificates” from Start.</li>
+<li>Drag and drop the new certificate form Personal – Certificates folder into the Trusted Root Certification Authorities – Certificates folder.</li>
+<li>Double click on the certificate.</li>
+<li>Go to &quot;Details&quot; and click &quot;Copy to file&quot;.</li>
+<li>Export the file as a PFX file into your SQLLRS config folder. If you have Git installed on your computer, run openssl.exe from the Git folder.
+Run these commands from your SQLLRS config folder:
+<pre><code class="lang-json">C:\Users\...\AppData\Local\Programs\Git\usr\bin\openssl.exe pkcs12 -in localcert.pfx -nocerts -out localcert.key.pem -nodes
+C:\Users\...\AppData\Local\Programs\Git\usr\bin\openssl.exe pkcs12 -in localcert.pfx -clcerts -nokeys -out localcert.crt.pem
+```json
+</code></pre>
+</li>
+<li>Add the certificates to the config file.</li>
+</ol>
+<p>After adding the pem files and updating the configuration file as below, you should be able to open the LRS Administration with a secure connection from your browser (
+https://localhost:8443/admin).</p>
+<pre><code class="lang-json">{  
+  &quot;lrs&quot; : {
+    &quot;adminUserDefault&quot;: &quot;admin&quot;,
+    &quot;adminPassDefault&quot;: &quot;lrs&quot;,
+    &quot;authorityUrl&quot;: &quot;http://deltlabs.com&quot;,
+    &quot;enableReactions&quot;: true
+  },  
+  &quot;webserver&quot;: {
+    &quot;httpHost&quot;: &quot;0.0.0.0&quot;,
+    &quot;httpPort&quot;: 8081,
+    &quot;sslPort&quot;: 8443,
+    &quot;allowAllOrigins&quot;: true,
+    &quot;keyPkeyFile&quot; : &quot;config/localcert.key.pem&quot;,
+    &quot;keyCertChain&quot; : &quot;config/localcert.crt.pem&quot;
+  }
+}
+</code></pre>
 
 </article>
 

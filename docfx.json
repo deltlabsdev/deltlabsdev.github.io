@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.{md,yml}"
+          "**/*.{md,yml}",
+          "**/images/**"
         ],
         "exclude": [
           "_site/**"
@@ -30,6 +31,7 @@
       "_appFaviconPath": "images/custom.ico",
       "_appFooter":"<a href=\"https://deltlabs.com\">DeLT Labs GmbH</a> <a href=\"/imprint.html\">Impressum</a>",      
       "_disableContribution": true,
+      "_enableSearch": true,
       "pdf": false
     }
   }

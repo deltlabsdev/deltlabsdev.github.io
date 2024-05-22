@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Home |  DeLT Labs Dev </title>
+      <title> |  DeLT Labs Dev </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Home |  DeLT Labs Dev ">
+      <meta name="title" content=" |  DeLT Labs Dev ">
       
       
-      <link rel="icon" href="images/custom.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../../images/custom.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
       
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/deltlabsdev/deltlabsdev-pages/blob/main/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/deltlabsdev/deltlabsdev-pages/blob/main/xAPI/sqllrs/images/apicalls.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -31,7 +31,7 @@
       <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
-  <script type="module" src="./public/docfx.min.js"></script>
+  <script type="module" src="./../../../public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="https://dev.deltlabs.com">
-            <img id="logo" class="svg" src="images/custom.svg" alt=" DeLT Labs Dev">
+            <img id="logo" class="svg" src="../../../images/custom.svg" alt=" DeLT Labs Dev">
              DeLT Labs Dev
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,9 +85,63 @@
         </div>
 
         <article data-uid="">
-<h1 id="home">Home</h1>
 
-<p>Welcome!</p>
+<p>GET <a href="https://lrs.deltlabs.com/xapi/statements">https://lrs.deltlabs.com/xapi/statements</a>
+Content-Type: application/json
+Authorization: Basic f25736a648caf22e63be9e85ceb246b33e5e01d02136a168dcbf1212a1325e79:3b26c7fd24f3d75e14a2748a09e44e2d694f544ba7e9c5cbf4c9264ffde56673
+X-Experience-API-Version: 1.0</p>
+<p><img src="../../../images/lrscreds.png" alt="  "></p>
+<pre><code class="lang-json">POST https://localhost:8443/xapi/statements
+Content-Type: application/json
+Authorization: Basic a32df9c62066cf8ebdac9dcf63c5b8e26d45840a8e11e6d21bdb4a557359e6e7:635ef6d70b6149e435dbe2810d7f0cc4093abc1e765149e13e670f92e359c6c1
+X-Experience-API-Version: 1.0
+
+ {
+    &quot;actor&quot;: {
+      &quot;account&quot;: {
+        &quot;homePage&quot;: &quot;https://mylearnertoken.com&quot;,
+        &quot;name&quot;: &quot;unidentified&quot;
+      }
+    },
+    &quot;verb&quot;: {
+      &quot;id&quot;: &quot;http://adlnet.gov/expapi/verbs/registered&quot;,
+      &quot;display&quot;: {
+        &quot;en-US&quot;: &quot;registered&quot;
+      }
+    },
+    &quot;object&quot;: {
+      &quot;id&quot;: &quot;http://mylearnertoken.com/xapi/activities/EN4UObfboEm&quot;,
+      &quot;definition&quot;: {
+        &quot;name&quot;: {
+          &quot;en&quot;: &quot;Corporate Learning MOOC 2024&quot;
+        },
+        &quot;description&quot;: {
+          &quot;en&quot;: &quot;Corporate Learning MOOC 2024: Future Learning Organization - #CLMOOC24&quot;
+        },
+        &quot;extensions&quot;: {
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/type&quot;: &quot;LwvRmqfEDmz&quot; }
+      },
+      &quot;objectType&quot;: &quot;Activity&quot;
+    },
+    &quot;context&quot;: {
+      &quot;extensions&quot;: {
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/type&quot;: &quot;LwvRmqfEDmz&quot;,
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/version&quot;: &quot;1.0&quot;,
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/culture&quot;: &quot;en-US&quot;,
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/description&quot;: &quot;Corporate Learning MOOC 2024: Future Learning Organization - #CLMOOC24&quot;,
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/url&quot;: &quot;https://colearn.de/clmooc24/&quot;
+      }
+    },
+    &quot;timestamp&quot;: &quot;2024-01-15T16:03:25.2146258+01:00&quot;,
+    &quot;stored&quot;: &quot;2024-01-15T15:04:45.3690624Z&quot;
+  }
+
+
+
+
+
+
+</code></pre>
 
 </article>
 
