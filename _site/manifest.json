@@ -138,6 +138,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/images/apicalls copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/images/apicalls copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "xAPI/sqllrs/images/apicalls.md",
       "output": {
         ".html": {
@@ -203,11 +213,11 @@
       "type": "Toc",
       "source_relative_path": "xAPI/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "xAPI/toc.json"
-        },
         ".html": {
           "relative_path": "xAPI/toc.html"
+        },
+        ".json": {
+          "relative_path": "xAPI/toc.json"
         }
       },
       "version": ""
