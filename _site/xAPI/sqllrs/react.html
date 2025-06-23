@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SQLLRS React |  DeLT Labs Dev </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SQLLRS React |  DeLT Labs Dev ">
+      
+      
+      <link rel="icon" href="../../images/custom.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/deltlabsdev/deltlabsdev-pages/blob/main/xAPI/sqllrs/react.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://dev.deltlabs.com">
+            <img id="logo" class="svg" src="../../images/custom.svg" alt=" DeLT Labs Dev">
+             DeLT Labs Dev
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sqllrs-react">SQLLRS React</h1>
+
+<p>SQLLRS Version 0.7+ supports Reactions.</p>
+<p>Tipp:</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Reactions will only be shown in the menu if the enableReactions parameter is set to true.</p>
+</div>
+<pre><code class="lang-json">{
+  &quot;lrs&quot; : {
+    &quot;adminUserDefault&quot;: &quot;&quot;,
+    &quot;adminPassDefault&quot;: &quot;&quot;,
+    &quot;enableReactions&quot;: true
+  },
+  &quot;webserver&quot;:   
+}
+</code></pre>
+<pre><code class="lang-json">POST https://localhost:8443/xapi/statements
+Content-Type: application/json
+Authorization: Basic a32df9c62066cf8ebdac9dcf63c5b8e26d45840a8e11e6d21bdb4a557359e6e7:635ef6d70b6149e435dbe2810d7f0cc4093abc1e765149e13e670f92e359c6c1
+X-Experience-API-Version: 1.0
+
+{
+ &quot;actor&quot;: {
+      &quot;account&quot;: {
+        &quot;homePage&quot;: &quot;https://mylearnertoken.com&quot;,
+        &quot;name&quot;: &quot;unidentified&quot;
+      }
+    },
+  &quot;object&quot;: {
+    &quot;id&quot;: &quot;http://mylearnertoken.com/xapi/activities/cc1&quot;
+  },
+  &quot;verb&quot;: {
+    &quot;id&quot;: &quot;https://adlnet.gov/expapi/verbs/completed&quot;
+  }
+}
+</code></pre>
+<pre><code class="lang-json">[
+  &quot;f65543b8-3ae0-4a2e-bd22-88eb9e6b4c85&quot;
+]
+</code></pre>
+<pre><code class="lang-json">POST https://localhost:8443/xapi/statements
+Content-Type: application/json
+Authorization: Basic a32df9c62066cf8ebdac9dcf63c5b8e26d45840a8e11e6d21bdb4a557359e6e7:635ef6d70b6149e435dbe2810d7f0cc4093abc1e765149e13e670f92e359c6c1
+X-Experience-API-Version: 1.0
+
+{
+ &quot;actor&quot;: {
+      &quot;account&quot;: {
+        &quot;homePage&quot;: &quot;https://mylearnertoken.com&quot;,
+        &quot;name&quot;: &quot;unidentified&quot;
+      }
+    },
+  &quot;object&quot;: {
+    &quot;id&quot;: &quot;http://mylearnertoken.com/xapi/activities/cc2&quot;
+  },
+  &quot;verb&quot;: {
+    &quot;id&quot;: &quot;https://adlnet.gov/expapi/verbs/completed&quot;
+  }
+}
+</code></pre>
+<pre><code class="lang-json">[
+  &quot;1ffe3344-43d0-4669-8f90-ade9144fa38c&quot;
+]
+</code></pre>
+<p>/xapi/statements?unwrap_html=true&amp;statementId=1525f6c9-0998-4869-9ad8-6082a428f74e</p>
+<p>/xapi/statements?unwrap_html=true&amp;activity=https%3A//www.yetanalytics.com/xapi/activities/example_activity&amp;related_activities=true</p>
+<pre><code class="lang-json">POST https://localhost:8443/xapi/statements
+Content-Type: application/json
+Authorization: Basic a32df9c62066cf8ebdac9dcf63c5b8e26d45840a8e11e6d21bdb4a557359e6e7:635ef6d70b6149e435dbe2810d7f0cc4093abc1e765149e13e670f92e359c6c1
+X-Experience-API-Version: 1.0
+
+ {
+  &quot;actor&quot;: {
+    &quot;account&quot;: {
+      &quot;homePage&quot;: &quot;https://mylearnertoken.com&quot;,
+      &quot;name&quot;: &quot;unidentified&quot;
+    }
+  },
+  &quot;verb&quot;: {
+    &quot;id&quot;: &quot;http://adlnet.gov/expapi/verbs/registered&quot;,
+    &quot;display&quot;: {
+      &quot;en-US&quot;: &quot;registered&quot;
+    }
+  },
+  &quot;object&quot;: {
+    &quot;id&quot;: &quot;http://mylearnertoken.com/xapi/activities/clTG0ZBh6fh&quot;,
+    &quot;definition&quot;: {
+      &quot;name&quot;: {
+        &quot;en&quot;: &quot;Test&quot;
+      },
+      &quot;description&quot;: {
+        &quot;en&quot;: &quot;Test&quot;
+      },
+      &quot;extensions&quot;: {
+        &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/url&quot;: &quot;https://activities.deltlabs.com/79221cb7-0961-4ef4-9f0c-085b50cd624d&quot;
+      }
+    },
+    &quot;objectType&quot;: &quot;Activity&quot;
+  },
+  &quot;context&quot;: {
+    &quot;extensions&quot;: {
+      &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/type&quot;: &quot;LwvRmqfEDmz&quot;,
+      &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/version&quot;: &quot;1.0&quot;,
+      &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/culture&quot;: &quot;en-US&quot;,
+      &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/description&quot;: &quot;Test&quot;,
+      &quot;https://mylearnertoken.com/xapi/mylearnertoken/extensions/url&quot;: &quot;https://activities.deltlabs.com/79221cb7-0961-4ef4-9f0c-085b50cd624d&quot;
+    }
+  },
+  &quot;timestamp&quot;: &quot;2024-01-26T11:12:27.3210939+01:00&quot;
+}
+
+</code></pre>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <a href="https://deltlabs.com">DeLT Labs GmbH</a> <a href="/imprint.html">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

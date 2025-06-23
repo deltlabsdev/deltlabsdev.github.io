@@ -1,17 +1,32 @@
 {
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
-    "title": "Getting Started | deltlabsdev",
-    "keywords": "Getting Started"
+    "title": "Getting Started | mylearnertoken",
+    "keywords": "Getting Started An ActivityID can be entered in the Search box on the home page, added to https://mylearnertoken.com/track/8kzj7GPdp2Y, Basic principles: User completed form Any user can complete a form for an Activity Type. https://mylearnertoken.com/web/activity/[activityType] Example: https://mylearnertoken.com/web/activity/webinar"
   },
   "docs/introduction.html": {
     "href": "docs/introduction.html",
-    "title": "Introduction | deltlabsdev",
+    "title": "Introduction | mylearnertoken",
     "keywords": "Introduction"
+  },
+  "docs/save-activity.html": {
+    "href": "docs/save-activity.html",
+    "title": "Save Activities | mylearnertoken",
+    "keywords": "Save Activities Add your activity. API Call POST https://localhost:7121/api/lrd/saveActivity/context Content-Type: application/json Authorization: Bearer {{accessToken}} X-API-KEY: aaa { \"title\": \"Context Test Saturday\", \"summary\": \"This is a summary.\", \"description\": \"<p>Description...</p>\", \"begin\":\"2024-07-15T00:00:00+02:00\", \"end\":\"2024-07-15T00:01:00+02:00\", \"recording\": false, \"url\":\"https://deltlabs.com/csssontext2\" } { \"uri\": \"https://activities.mylearnerdata.com/1/KFlYV6m07mh\", \"id\": \"KFlYV6m07mh\", \"track\": \"https://localhost:7121/track/KFlYV6m07mh\", \"title\": \"Context Test Saturday\", \"type\": \"context\" }"
+  },
+  "docs/what-we-save.html": {
+    "href": "docs/what-we-save.html",
+    "title": "What we save | mylearnertoken",
+    "keywords": "What we save To keep the system safe, we save these data: Activity Type, Statement ID, Timestamp We save the Activity Type, Statement ID and Timestamp of each generated Learning Record Document in a database. The Activity Type is the type, like Webinar, Course or Video. We do not save the entered activity details, like title or description. The Statement ID is a GUID and does not contain any other information than a GUID. We do not save any personal data. The timestamp is the time when the Learning Record Document has been generated."
+  },
+  "imprint.html": {
+    "href": "imprint.html",
+    "title": "Impressum (Imprint) | mylearnertoken",
+    "keywords": "Impressum (Imprint) DeLT Labs GmbH Agnes-Bernauer-Strasse 151 80687 München Handelsregister: HRB 283614 Registergericht: Amtsgericht München Vertreten durch: Diplom-Kaufmann Oliver Pincus Kontakt Telefon: +49 (0) 89 69319051 E-Mail: mail@deltlabs.com Umsatzsteuer-ID Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE215827651 Angaben gemäß § 5 TMG"
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | deltlabsdev",
-    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Home | mylearnertoken",
+    "keywords": "Home Welcome!"
   }
 }

@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Introduction","href":"introduction.md","topicHref":"introduction.md"},{"name":"Getting Started","href":"getting-started.md","topicHref":"getting-started.md"}],"pdf":false}
+{"order":100,"items":[{"name":"Introduction","href":"introduction.md","topicHref":"introduction.md"},{"name":"Getting Started","href":"getting-started.md","topicHref":"getting-started.md"},{"name":"SQLLRS","includedFrom":"~/xAPI/sqllrs/toc.yml","items":[{"name":"Installation","href":"sqllrs/index.html","topicHref":"sqllrs/index.html"},{"name":"API Calls","href":"sqllrs/apicalls.html","topicHref":"sqllrs/apicalls.html"}]}],"pdf":false}

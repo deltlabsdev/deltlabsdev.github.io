@@ -1,7 +1,15 @@
 {
-  "source_base_path": "/home/runner/work/deltlabsdev.github.io/deltlabsdev.github.io",
+  "source_base_path": "C:/Data/DeLTLabs/Dev/DocFx/deltlabsapp-pages/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
@@ -23,14 +31,34 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/save-activity.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/save-activity.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "docs/toc.json"
-        },
         ".html": {
           "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/what-we-save.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/what-we-save.html"
         }
       },
       "version": ""
@@ -89,34 +117,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "xAPI/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "xAPI/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "xAPI/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "xAPI/toc.html"
         },
         ".json": {
-          "relative_path": "xAPI/toc.json"
+          "relative_path": "toc.json"
         }
       },
       "version": ""
