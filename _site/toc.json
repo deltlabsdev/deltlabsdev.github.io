@@ -1,2 +1,6 @@
 
+<<<<<<< HEAD
 {"items":[{"name":"Home","href":"index.html","topicHref":"index.html"},{"name":"Docs","href":"docs/introduction.html","tocHref":"docs/toc.html","topicHref":"docs/introduction.html"}],"pdf":false}
+=======
+{"items":[{"name":"Home","href":"index.html","topicHref":"index.html"},{"name":"xAPI","includedFrom":"~/xAPI/toc.yml","items":[{"name":"Introduction","href":"xAPI/introduction.md","topicHref":"xAPI/introduction.md"},{"name":"Getting Started","href":"xAPI/getting-started.md","topicHref":"xAPI/getting-started.md"},{"name":"SQLLRS","includedFrom":"~/xAPI/sqllrs/toc.yml","items":[{"name":"Installation","href":"xAPI/sqllrs/index.html","topicHref":"xAPI/sqllrs/index.html"},{"name":"API Calls","href":"xAPI/sqllrs/apicalls.html","topicHref":"xAPI/sqllrs/apicalls.html"}]}]}],"pdf":false}
+>>>>>>> c047a9c72dc6c8490fd79152297a49ca5e107dc4

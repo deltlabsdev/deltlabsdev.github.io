@@ -1,4 +1,9 @@
 - name: Home
   href: index.md
+<<<<<<< HEAD
 - name: Docs
   href: docs/
+=======
+- name: xAPI
+  href: xAPI/toc.yml
+>>>>>>> c047a9c72dc6c8490fd79152297a49ca5e107dc4

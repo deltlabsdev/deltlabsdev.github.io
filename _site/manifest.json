@@ -94,6 +94,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/lrscreds.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/lrscreds.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "imprint.md",
       "output": {
@@ -119,9 +129,118 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+<<<<<<< HEAD
         },
         ".json": {
           "relative_path": "toc.json"
+=======
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/apicalls.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/apicalls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/images/apicalls copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/images/apicalls copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/images/apicalls.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/images/apicalls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/index copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/index copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/react.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/react.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "xAPI/sqllrs/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "xAPI/sqllrs/toc.json"
+        },
+        ".html": {
+          "relative_path": "xAPI/sqllrs/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "xAPI/sqllrs/windows.md",
+      "output": {
+        ".html": {
+          "relative_path": "xAPI/sqllrs/windows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "xAPI/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "xAPI/toc.json"
+        },
+        ".html": {
+          "relative_path": "xAPI/toc.html"
+>>>>>>> c047a9c72dc6c8490fd79152297a49ca5e107dc4
         }
       },
       "version": ""
